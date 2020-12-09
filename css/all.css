@@ -1,0 +1,144 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*start*/
+
+body{
+	font-family:"Noto Sans", sans-serif;
+}
+
+.nav{
+	height: 108px;
+	display: flex;
+	justify-content: space-between;	
+	background-color: #AA0601;
+	color: #FFF;
+	font-size: 20px;
+	line-height: 30px;
+}
+.nav ul{
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	padding: 40px 64px;
+}
+.nav ul li{
+	padding: 0 32px;
+}
+.logo{
+	padding: 30px 88px;
+}
+h1{
+	font-size: 64px;
+	line-height: 96px;
+}
+h2{
+	font-size: 48px;
+	text-align: center;
+	padding: 60px 0;
+	font-weight: bold;
+	color: #650300;
+}
+h3{
+	font-size: 24px;
+	font-weight:bold;
+	color: #650300;
+}
+.banner{
+	background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true) center center no-repeat;
+	height: 840px;
+	color:#650300;
+	text-align: right;
+	display: block;
+	font-weight: bold;
+}
+.banner-content{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 100%
+}
+.banner span{
+	font-size: 36px;
+	line-height: 54px;
+}
+.container{
+	max-width: 1100px;
+	margin: 0 auto;
+	padding-bottom: 80px;
+}
+.main{
+	background-color: #AA06010D;
+}
+.main-list{
+	display: flex;
+	justify-content:center;
+	align-items:end;
+}
+.main-list-item{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 208px;
+	margin: 0 ;
+	margin: 0px 38px;
+}
+.main-list-item img{
+	padding-bottom: 30px;
+}
+.main-list-item:last-child img{
+	padding-top: 20px;
+	padding-bottom:35px;
+}
+.main-list-item p{
+	padding-top: 4px;
+	line-height: 24px;
+}
