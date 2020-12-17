@@ -171,6 +171,44 @@ h3{
 	padding-top: 4px;
 	line-height: 24px;
 }
+.classic-list-item{
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  
+}
+.classic-img{
+  display: block;
+  width: 635px;
+}
+.classictext{
+  display: flex;
+  margin: 0 10px;
+}
+.classictext h4{
+  display: flex;
+  font-size: 48px;
+  color: #AA0601;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  margin: 0 15px;
+}
+.joint{
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/bg.png");
+}
+.joint h2{
+  color: #FFF;
+}
+.joint-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.joint-img img{
+  width: 49%;
+  margin: 15px;
+}
 .footer{
 	background: #AA0601;
 	color: #fff;
