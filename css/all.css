@@ -150,15 +150,14 @@ h3{
 .main-list{
 	display: flex;
 	justify-content:center;
-	align-items:end;
+  align-items:end;
 }
 .main-list-item{
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	width: 208px;
-	margin: 0 ;
-	margin: 0px 38px;
+  margin: 0px 38px;
 }
 .main-list-item img{
 	padding-bottom: 30px;
@@ -196,6 +195,9 @@ h3{
 }
 .joint{
   background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/bg.png");
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .joint h2{
   color: #FFF;
@@ -205,9 +207,99 @@ h3{
   justify-content: center;
   align-items: center;
 }
-.joint-img img{
-  width: 49%;
-  margin: 15px;
+.joint-img li{
+  position: relative;
+  width: 100%;
+  padding: 0 15px;
+}
+.joint-list{
+  position: relative;
+  
+}
+.joint-list h3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.5);
+  font-size: 72px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.customer-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.customer-list li{
+  width: 25%;
+}
+.coustomer-item{
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+
+}
+.coustomer-text{
+  padding: 16px;
+  border: 1px solid #DEE2E6;
+  border-top: none;
+}
+.coustomer-text .name{
+  font-size: 14px;
+  font-weight: 600;
+}
+.contactus{
+  background-color:#FBF2F2;
+  
+}
+.contactus h2,.contactus p,.contactForm{
+  color: #111;
+  max-width: 730px;
+  margin: 0 auto;
+  padding: 12px 0;
+}
+.contactus p{
+  font-size: 20px;
+  font-weight: 600;
+}
+.contactForm,.contactForm .form-list{
+  display: flex;
+  flex-direction: column;
+}
+.form-list{
+  margin: 8px 0;
+}
+.form-list label,.contactForm div span{
+  font-weight: 650;
+  margin-bottom: 4px;
+}
+.form-list textarea {
+  height: 136px;
+}
+.form-list input,.form-list textarea {
+  width: 100%;
+  padding: 14px 0 14px 16px;
+  border: 1.5px solid #000000;
+  background: transparent;
+}
+.contactFormSub{
+  width: 50%;
+  background: #AA0601;
+  color: #FFFFFF;
+  margin: 36px auto;
+  padding: 16px 0;
+  font-size: 16px;
+  line-height: 24px;
+}
+.contactFormSub span{
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .footer{
 	background: #AA0601;
@@ -224,19 +316,41 @@ h3{
 	display: flex;
 }
 .footer-nav ul:first-child li{
-	margin: 0 24px;
+	margin-right: 24px;
 }
 .footer-nav ul:last-child li{
 	margin: 0 8px;
 }
 .footer-contact{
-	font-size: 36px;
+  font-size: 36px;
+  border-bottom: 1px solid #FFF;
+  padding-bottom: 22px;
 }
 .footer-contact ul li{
 	display: flex;
-	align-items: center;
+  align-items: center;
+  font-size: 36px;
 }
-
+.footer-contact ul li img{
+  padding-right: 16px;
+  height: 1em;
+}
+.copyrightText,.copyrightList{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.copyright{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+}
+.copyrightText img{
+  padding-right: 38px;
+}
+.copyrightList li{
+  padding-left: 62px;
+}
 
 @media only screen and (max-width: 992px){
 	.nav{padding: 0 20px;}
@@ -250,7 +364,11 @@ h3{
 	.logo img{width:48px;display: block;margin: 0 auto;}
 	.nav ul {flex-wrap: wrap;width: 100%;padding: 0px;}
 	.nav ul li {display: flex;width: 50%;padding: 0px;justify-content: center;margin: 0px 0px;}
-	.nav ul li a{border: 1px solid #fff;width: 100%;display: block;text-align: center;padding: 8px 0;}
+  .nav ul li a{border: 1px solid #fff;width: 100%;display: block;text-align: center;padding: 8px 0;}
+  .customer-list li{width: 50%;}
+  .main-list{flex-wrap: wrap;}
+  .main-list-item{width: 237px;}
+  
 	.footer-nav ul:last-child li{display:block;}
 	.footer-icon{}
 	.footer-nav{}
