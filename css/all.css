@@ -45,18 +45,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-a{
-    display: block;
-    text-decoration: none;
-}
-img{
-    max-width: 100%;
-    height: auto;
-    vertical-align:middle;
-}
-h1,h2,h3{
-    font-weight: bold;
-}
 *,*::before,*::after{
     box-sizing: border-box;
   }
@@ -81,6 +69,22 @@ h1,h2,h3{
 
 body{
 	font-family:"Noto Sans", sans-serif;
+}
+
+a{
+  display: block;
+  text-decoration: none;
+}
+img{
+  max-width: 100%;
+  height: auto;
+  vertical-align:middle;
+}
+h1,h2,h3{
+  font-weight: bold;
+}
+*,*::before,*::after{
+  box-sizing: border-box;
 }
 
 .nav{
